@@ -25,13 +25,13 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .font-bannerTitle {
     font-size: 48px;
     font-weight: bold;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     line-height: 70px;
 }
 
@@ -53,10 +53,8 @@
 
 @media(max-width:768px) {
     .header{
-        height: 110vh;
-        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
-        background-size: 90%;
-        background-position: center bottom;
+        background-image: none;
+        height: 130vh;
     }
     .blueBall{
         background-image: none;
@@ -66,8 +64,14 @@
         padding: 0 10%;
         align-items: flex-start;
         margin-top: 36px;
+        height: 70vh;
         img{
             width:100%;
+            background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100%;
+            margin-top: 24px;
         }
     }
 }
