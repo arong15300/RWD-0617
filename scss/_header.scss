@@ -1,0 +1,73 @@
+.header {
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.banner {
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.font-highlight {
+    color: $blue;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 8px;
+}
+
+.font-bannerTitle {
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    line-height: 70px;
+}
+
+.font-secondTitle {
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.blueBall {
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg");
+    background-repeat: no-repeat;
+    background-position: -200px;
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    bottom: -250px;
+    z-index: -1;
+}
+
+@media(max-width:768px) {
+    .header{
+        height: 130vh;
+        background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg");
+        background-size: 90%;
+        background-position: center bottom;
+    }
+    .blueBall{
+        background-image: none;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 0 10%;
+        align-items: flex-start;
+        margin-top: 36px;
+        img{
+            width:100%;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.btn-red {
+    background-color: $red;
+
+    &:hover {
+        background-color: lighten($red, 10%);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 10%;
+    margin-bottom: 30px;
+}
+
+@media(max-width:768px){
+    h1{
+        width: 50%;
+    }
+    .navbar{
+        box-shadow: $yellow 0 2px 3px;
+    }
+}

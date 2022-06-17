@@ -1,0 +1,22 @@
+.footer-plan{
+    height: 503px;
+    background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 280px;
+}
+
+.footer-plan h2{
+    margin-bottom: 48px;
+}
+
+@media(max-width:768px){
+    .footer-plan h2{
+        margin-bottom: 24px;
+    }
+}
